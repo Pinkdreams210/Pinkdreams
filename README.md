@@ -1,2 +1,0 @@
-# Pinkdreams
-Pinkdreams's CV
