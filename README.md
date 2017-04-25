@@ -1,2 +1,2 @@
 # Pinkdreams
-Pinkdreams Shop
+Pinkdreams's CV
