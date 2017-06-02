@@ -68,7 +68,7 @@
 
 
 		removeMouseWheelHandler();
-		addTouchHandler();
+		//addTouchHandler();
 
 		//if css3 is not supported, it will use jQuery animations
 		if(options.css3){
