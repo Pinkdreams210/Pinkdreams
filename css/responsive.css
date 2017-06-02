@@ -1,0 +1,377 @@
+@media only screen and (max-width: 1024px) {
+	h1{
+		display: none;
+	}
+	#top-bar p.logo{
+		width: 16%;
+		text-align: left;
+	}	
+#portfoliolist .portfolio {
+	width:31%;
+}	
+.filter {
+  font-size: 2vw;
+  padding: 0 15px;
+}
+.filter:hover, .filter.active {
+    padding: 10px 15px;
+}
+.hide-sp{
+		display: none;
+	}	
+.button li{
+	width: 45%;
+		font-size: 1.8vw;
+}	
+.ms-right .ms-section.home p.name{
+	padding: 8px 53px;
+}
+	
+}
+
+@media only screen and (max-width: 800px) {
+img {
+	max-width: 100%
+}
+.inner, .under #main {
+	width: 100%
+}
+.wrapper {
+	min-width: 100%
+}
+.under #content {
+	width: 100%;
+	float: none;
+	padding: 0 10px
+}	
+.only-SP {
+    display: block;
+  }
+.only-PC {
+    display: none;
+  }
+/*************Header*****************/
+	#top-bar p.logo{
+		width: 80%;
+		text-align: left;
+	}	
+/*************MENU*****************/
+  .menu-toggle {
+    display: block;
+  }
+ul[data-liffect="bounceInDown"] li {
+    opacity: 1;
+    -webkit-animation: 0;
+    -moz-animation: 0;
+    -o-animation: 0;
+    animation: 0;
+}
+#top-bar ul {
+    display: none;
+}
+#top-bar ul.opening {
+    display: block;
+	z-index: 999999;
+	width: 100%;position: fixed;
+	top:60px;
+	height: 100%;
+	background: rgba(255, 255, 255,0.9);
+}
+#top-bar ul{
+	height: 100%; 
+	}
+#top-bar ul li{
+		float: right;
+		width: 100%;
+	}
+#top-bar ul li a {
+	padding: 16px 30px 16px 16px;
+	-webkit-transform: skew(0deg);
+	   -moz-transform: skew(0deg);
+	     -o-transform: skew(0deg);
+	transform: skew(0deg);
+	background: rgba(255, 255, 255,0);
+	border-bottom: 1px dashed #FF7FB4;
+}	
+#menu li.active a {
+	-webkit-transform: skew(0deg);
+	   -moz-transform: skew(0deg);
+	     -o-transform: skew(0deg);
+	transform: skew(0deg);
+	z-index: 100;
+	background: rgba(255, 127, 180,0.8);
+}	
+/*************Content*****************/
+#myContainer .ms-left{
+		display: none;
+	}
+#myContainer .ms-right{
+		width: 100%;
+	margin: 0 auto;
+	height: 70%;
+	}	
+/*************INDEX*****************/	
+.scrollbar div.content_1{
+	height: 70%;
+	width: 96%;
+	margin: 0 auto;
+	padding: 30px 0px 40px 10px;
+}
+	.mCSB_container {
+    margin-right: 30px;
+    overflow: hidden;
+    width: auto;
+}
+.ms-right .ms-section.home{
+  background: url(../images/index_bg01.jpg) no-repeat center center #8B8E94;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	}
+.ms-right .ms-section.home .only-SP{
+	position: absolute;
+	bottom: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	display: block;
+	width: 100%;
+	}
+.only-SP ul.txt-name{
+		display: table;
+		margin: 0 2% 0;
+		padding: 0;
+	    width: 96%;
+	}
+.only-SP ul.txt-name li{
+	text-align: center;
+	display: table-cell;
+	margin: 0;
+	line-height: 1em;
+	color: #FFF;
+	font-family: 'Pattaya', sans-serif;
+	padding: 30px 0px;
+	font-size: 7vw;
+	width: 50%;
+}
+.only-SP li.img-sp{
+	background: #FF7FB4;
+}	
+.only-SP li.name-sp{
+	background: #60C5EC;
+}
+.only-SP p.web-sp{
+	width: 96%;
+	font-size: 6.6vw;
+	background: #FFF;
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-align: center;
+	color: #60C5EC;
+	z-index: 100;
+	padding: 10px 0;
+	margin: 0 2%;
+}
+
+/*************ABOUT*****************/	
+.about .only-SP {
+  background: url(../images/about_sp01.png) center center no-repeat #eeeeee; 
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+	background-position: 50% 50%;
+    margin: 0;
+    overflow: hidden;
+	z-index: 1;
+	width: 100%;
+	height: 30%;
+}
+	/*************RESUME*****************/
+.resume .only-SP {
+  background: url(../images/bg05.jpg) center center no-repeat #eeeeee; 
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+	background-position: 50% 50%;
+    margin: 0;
+    overflow: hidden;
+	z-index: 1;
+	width: 100%;
+	height: 30%;
+}	
+		/*************SKILL*****************/
+.skill .only-SP {
+  background: url(../images/sp04.png) center center no-repeat #eeeeee; 
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+	background-position: 50% 50%;
+    margin: 0;
+    overflow: hidden;
+	z-index: 1;
+	width: 100%;
+	height: 30%;
+}	
+	/*************PORTFOLIO*****************/
+.portfolio .only-SP {
+  background: url(../images/sp03.png) center center no-repeat #eeeeee; 
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+	background-position: 50% 50%;
+    margin: 0;
+    overflow: hidden;
+	z-index: 1;
+	width: 100%;
+	height: 30%;
+}	
+.filter {
+  font-size: 2.5vw;
+}
+	/*************CONTACT*****************/
+.gMap{
+	width: 100%;
+	height:30%;
+}
+.button li{
+		font-size: 2.5vw;
+}
+	
+	
+#footer .footer-L, #footer .footer-R{
+	width: 100%;
+		text-align: center;
+}
+	.footer-L ul li a::before {
+    font-size: 24px;
+}
+.zalo{
+	background: url(../images/zalo.png) center center no-repeat;
+	opacity: 0.7;
+	background-size:21px 21px;
+}	
+.footer-L ul li a {
+    line-height: 2.4em;
+    width: 2.4em;
+}
+	
+.under #mainvisual {
+	margin-bottom: 20px
+}
+.section {
+	margin-bottom: 30px
+}
+.under h2 {
+	font-size: 20px;
+	text-align: center;
+	height: 130px
+}
+.under h3 {
+	font-size: 18px;
+	margin-bottom: 20px
+}
+.under h4 {
+	font-size: 16px;
+	background-size: 12px;
+	margin-bottom: 15px
+}
+.under h5 {
+	font-size: 16px;
+	padding: 0 0 0 18px;
+	margin-bottom: 15px
+}
+.under h5:before {
+	content: "";
+	height: 14px;
+	width: 7px;
+	top: 3px
+}
+.under h6 {
+	font-size: 16px
+}
+#totop {
+	max-width: 40px;
+	max-height: 40px
+}
+}
+@media only screen and (max-width: 640px) {
+#portfoliolist .portfolio {
+	width:48%;
+}
+.filter {
+  font-size: 3vw;
+  padding: 0 10px;
+}
+.filter:hover, .filter.active {
+    padding: 10px 10px;
+}
+}
+@media only screen and (max-width: 480px) {	
+.button li{
+	width: 42%;
+		font-size: 3vw;
+}
+	
+table.under td, table.under th{
+	padding: 10px 5px;
+}
+	table.under th{
+		width: 5%;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	
+
+/*************only-SP*****************/	
+/*.about .only-SP, .resume .only-SP, .skill .only-SP, .portfolio .only-SP {	
+	height: 20%;
+}
+.scrollbar div.content_1{
+	height: 80%;
+}
+	.scrollbar.contact div.content_1{
+	height: 70%;
+}*/
+	.pc{
+	display: none;
+}
+	.sp{
+	display: block;
+}
+	#portfoliolist .portfolio {
+	width:100%;
+}
+	table.under{
+		width: 100%;
+	}
+	table.under th{
+	text-align: center;
+}
+		table.under td{
+	text-align: left;
+}
+.button li{
+	width:100%;
+		font-size: 5vw;
+	margin: 5px 0px;
+}
+#submit {
+	bottom: 120px;
+    width:60%;
+}
+	.send-mail{
+		padding-bottom: 10px;
+	}
+	.hide-320{
+		display: none;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.resume-dl dl dl dt {
+    font-size: 16px;
+	}
+}
