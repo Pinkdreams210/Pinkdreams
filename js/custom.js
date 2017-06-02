@@ -128,6 +128,7 @@ $(document).ready(function () {
             	menu: '#menu',
             	css3: true,
             	paddingTop: '60px',
-            	paddingBottom: '60px',
+            	paddingBottom: '60px',				
+			'touchSensitivity': -1,
             });
         });
