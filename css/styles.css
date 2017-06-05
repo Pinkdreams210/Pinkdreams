@@ -1201,12 +1201,12 @@ ul.resume-ul ul li:before{
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;
-  padding: 0 20px;
+  padding: 0 18px;
 	position: relative;
 }
 .filter:hover, .filter.active {
   background-color: #5FC4EB;
-  padding: 10px 25px;
+  padding: 10px 20px;
   color: #ffffff;
 }
 .container { 
