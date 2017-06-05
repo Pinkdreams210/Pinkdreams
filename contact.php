@@ -1,21 +1,5 @@
 
-<?php
-
-if($_POST["submit"]) {
-    $recipient="pinkdreams210@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -25,20 +9,46 @@ if($_POST["submit"]) {
 
 <body>
 
-    <?=$thankYou ?>
+<?php
+// Khai báo thư viên phpmailer
+require "contact/PHPMailerAutoload.php";
+	
+$ms = $_POST['message'];
+$name = $_POST['name'];
+$mail = $_POST['mail'];
+$subject = $_POST['subject'];
+// Khai báo tạo PHPMailer
+$mail = new PHPMailer();
+//Khai báo gửi mail bằng SMTP
+$mail->IsSMTP();
+//Tắt mở kiểm tra lỗi trả về, chấp nhận các giá trị 0 1 2
+// 0 = off không thông báo bất kì gì, tốt nhất nên dùng khi đã hoàn thành.
+// 1 = Thông báo lỗi ở client
+// 2 = Thông báo lỗi cả client và lỗi ở server
+//$mail->SMTPDebug  = 2;
+ 
+$mail->Debugoutput = "html"; // Lỗi trả về hiển thị với cấu trúc HTML
+$mail->Host       = "smtp.gmail.com"; //host smtp để gửi mail
+$mail->Port       = 587; // cổng để gửi mail
+$mail->SMTPSecure = "tls"; //Phương thức mã hóa thư - ssl hoặc tls
+$mail->SMTPAuth   = true; //Xác thực SMTP
+$mail->Username   = "colordesignweb@gmail.com"; // Tên đăng nhập tài khoản Gmail
+$mail->Password   = "Ht0909088210"; //Mật khẩu của gmail
+$mail->AddAddress("colordesignweb@gmail.com", "Portfolio");//Email của người nhận
+$mail->Subject = "Hire me for CV"; 
+$mail->Body = "$name <br> $subject<br>$ms"; 
 
-    <form method="post" action="contact.php">
-        <label>Name:</label>
-        <input name="sender">
+// $mail->MsgHTML(file_get_contents("email-template.html"), dirname(__FILE__));
+ 
+//Tiến hành gửi email và kiểm tra lỗi
+if(!$mail->Send()) {
+  echo "Có lỗi khi gửi mail: " . $mail->ErrorInfo;
+} else {
+  echo "Đã gửi thư thành công!";
+}
 
-        <label>Email address:</label>
-        <input name="senderEmail">
-
-        <label>Message:</label>
-        <textarea rows="5" cols="20" name="message"></textarea>
-
-        <input type="submit" name="submit">
-    </form>
+?>
+    
 
 </body>
 
