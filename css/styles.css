@@ -492,7 +492,7 @@ p {
 }
 .ms-left .ms-section.home p.img{
 	position: absolute;
-	top:45%;
+	top:40%;
 	right: 0;	
 }
 .ms-right .ms-section.home{
@@ -513,7 +513,7 @@ p {
 }
 .ms-right .ms-section.home p.name{
 	position: absolute;
-	top:45%;
+	top:40%;
 	background: #60C5EC;
 	font-family: 'Pattaya', sans-serif;
 	font-size: 50px;
@@ -525,7 +525,7 @@ p {
 }
 .ms-left .ms-section.home p.web{
 	position: absolute;
-	top:45%;
+	top:40%;
 	right: 0px;
 	margin-right: 0;
 	background: #FFF;
