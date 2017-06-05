@@ -1254,6 +1254,8 @@ ul.resume-ul ul li:before{
    display: block;
    position: relative;
 	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .view .title {   
    color: #fff;
