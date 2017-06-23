@@ -349,7 +349,8 @@ table.under td, table.under th{
 	display: block;
 }
 	#portfoliolist .portfolio {
-	width:100%;
+	width:98%;
+		margin: 0 1% 20px;
 }
 	table.under{
 		width: 100%;
@@ -375,6 +376,9 @@ table.under td, table.under th{
 	.hide-320{
 		display: none;
 	}
+	.view img {
+    margin: 0;
+}
 }
 @media only screen and (max-width: 320px) {
 	.resume-dl dl dl dt {
