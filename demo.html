@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=-100%, user-scalable=yes" />
+<meta name="format-detection" content="telephone=no">
+<title>Pinkdreams's Profile - Nguyen Thi Hoai Tram - Demo Web</title>
+<meta name="keywords" content="cv, portfolio, profile, resume, pinkdreams, hoai tram, desiger, web designer, web, coder, coding, ...">
+<meta name="description" content="Welcome to Pinkdreams's Profile - Nguyen Thi Hoai Tram - Web designer & Coder">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/multiscroll.css" />		
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Pattaya|Muli|Comfortaa" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/multiscroll.js"></script>
+	<script type="text/javascript" src="js/easings.min.js"></script>
+	<script type="text/javascript" src="js/scrollbar.js"></script>
+
+
+
+	
+<!--[if lt IE 9]>
+<script src="js/IE9.js"></script>
+<![endif]-->
+
+
+</head>
+<body class="page-demo">
+<div id="wrapper">
+  <!--header-->
+  <div id="header">
+    <div id="top-bar">
+      <p class="logo"><a href="index.html"><img src="images/logo.png" alt="Pinkdreams"></a></p>
+      <h1>Hi, I'm Pinkdreams. Welcome to My Profile</h1>
+              <div class="menu-toggle">
+              <div class="hamburger"></div>
+            </div>
+                <ul id="menu" class="open desktop" data-liffect="bounceInDown">       
+					<li data-menuanchor="home"><a href="#home">HOME</a></li>
+					<li data-menuanchor="about"><a href="#about">ABOUT</a></li>
+					<li data-menuanchor="resume"><a href="#resume">RESUME</a></li>
+					<li data-menuanchor="skill"><a href="#skill">SKILLS</a></li>
+					<li data-menuanchor="portfolio"><a href="#portfolio">PORTFOLIO</a></li>
+					<li data-menuanchor="contact"><a href="#contact">CONTACT</a></li>
+                </ul>
+    </div>
+	</div>
+    <!--content-->
+    <div id="myContainer" class="clearfix">
+	<div class="demo-left">
+<ul class="demo-img">
+  <li><img class="demo" src="img_nature_wide.jpg" alt=""></li>
+  <li><img class="demo" src="img_fjords_wide.jpg" alt=""></li>
+  <li><img class="demo" src="img_mountains_wide.jpg" alt=""></li>
+</ul>    
+    </div>            
+
+	
+	<div class="demo-right">
+    <div class="ms-section">
+			<h2>Demo for Web Design</h2>
+
+<ul class="ul-list">
+  <li class="demo-list list" onclick="currentDiv(1)">Demo 01</li>
+  <li class="demo-list list" onclick="currentDiv(2)">Demo 02</li>
+  <li class="demo-list list" onclick="currentDiv(3)">Demo 03</li>
+</ul>		 
+    </div>  
+    </div>
+    <!--/content--> 
+  </div>
+    <!--/content--> 
+  <!--footer-->
+  <div id="footer">
+	  <div class="footer-L">
+		  <ul data-liffect="slideLeft">
+		  	<li class="facebook"><a class="fa fa-facebook-square" href="https://www.facebook.com/nguyenthihoaitram" target="_blank">Facebook</a></li>
+		  	<li class="skype"><a href="skype:pinkdreams210?chat" class="fa  fa-skype" >Skype</a></li>
+		  	<li class="zalo"><a  class="fa zalo" href="#">Zalo</a></li>
+		  	<li class="viber"><a  class="fa fa-phone-square" href="#">Viber</a></li>
+		  	<li class="instagram"><a class="fa  fa-instagram" href="https://www.instagram.com/pinkdreams210/" target="_blank">Instagram</a></li>
+		  	<li class="pinterest"><a  class="fa fa-pinterest" href="https://www.pinterest.com/pinkdreams210/" target="_blank">Pinterest</a></li>
+		  	<li class="twitter"><a  class="fa  fa-twitter-square" href="https://twitter.com/Pinkdreams210" target="_blank">Twitter</a></li>
+		  </ul>
+	  </div>
+	  <div class="footer-R">
+	  	<p data-liffect="slideRight" class="copyright">Copyright © Pinkdreams, 2017<span class="hide-320"> - All rights reserved</span> </p>
+	  </div>
+	  </div>
+  <!--/footer--> 
+</div>
+
+</body>	
+	<script type="text/javascript" src="js/appear.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/mixitup.js"></script>
+	<script type="text/javascript" src="js/fancybox.js"></script>
+    
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("demo");
+  var dots = document.getElementsByClassName("list");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" show", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " show";
+}
+</script>
+    
+    
+	<script type="text/javascript" src="js/gmaps.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=&callback=gmaps.renderAll"></script>
+</html>

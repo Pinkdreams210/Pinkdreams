@@ -912,9 +912,9 @@ ul.resume-ul ul li:before{
 	width:100%;
 	background:#eee;
 	height:35px;
-	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
+	border-radius:3px;
 	-webkit-transition:0.4s linear;
 	-moz-transition:0.4s linear;
 	-ms-transition:0.4s linear;
@@ -1392,3 +1392,53 @@ textarea {
 	display: none;
 }
 
+
+/*==============DEMO================*/
+.page-demo #myContainer{
+	display:flex;
+	margin: 80px auto 0;
+	justify-content:center;
+}
+.page-demo .ms-section{
+	width:100%;
+	display:block;
+	}
+.demo-right, .demo-left{
+	width: 48%;
+	margin: 0 1%;
+}
+.demo-list {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.demo-list {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.demo-list:hover {
+    color: #FFF;
+    background-color: #FE7FB4;
+}
+.show, .w3-hover-red:hover {
+    color: #fff;
+    background-color: #60C5EC;
+}
+.demo-img{
+	background:url(../images/bg-demo.png) no-repeat center 10px;
+	width:100%;
+	height:630px;
+	z-index:100px;
+}
