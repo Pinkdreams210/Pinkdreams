@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6, input, button, textarea, select, p, blockquote, th, td, 
 	font-size: 140%
 }
 a {
+	color: #FE7FB4;
 	text-decoration: none
 }
 a:hover, a:active {
