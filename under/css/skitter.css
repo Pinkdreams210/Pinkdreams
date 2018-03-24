@@ -633,6 +633,13 @@
 .skitter .info_slide_dots, .skitter .info_slide {
 	display: none
 }
+.skitter {
+	position: relative;
+	max-width: 1024px;
+	height: 360px;
+	background: white;
+	margin: 0 auto;
+}
 }
 
 @media (max-width: 640px) {

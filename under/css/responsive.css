@@ -5,17 +5,79 @@
 	display: block;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1024px){	
 #wrapper {
 	min-width: 100%;
-}
-#mainvisual{
-	margin-top:60px;
 }
 .container {
 	width: 100%;
 	padding: 0 3%;
 }
+
+.logo{
+	margin-left:10px;
+}
+.section{margin-bottom:30px}
+.inner {
+	width:100%;
+	margin:0 auto;
+}
+
+.label_skitter h2 span.ttl01, .label_skitter p span.ttl01{
+	font-size: 30px;
+	padding:20px 30px;
+	margin-bottom:0;
+}
+.label_skitter h2 span.ttl02, .label_skitter p span.ttl02 {
+	display:none;
+}
+	}
+
+
+@media only screen and (max-width: 768px){	
+/*header*/
+#header{
+	height:60px;
+	}
+#mainvisual{
+	margin-top:60px;
+}
+.logo{
+	width:240px;
+	margin-right:25px;
+}
+.logo img{
+	max-width:100%;
+}
+#content{
+	width:100%;
+	padding:0 10px;
+}
+#gnavi ul{
+	max-width: 500px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	}	
+#gnavi li a{
+	padding: 14px 10px;
+	font-size: 20px;
+}
+.inner-box01{
+	width:98%;
+	margin:0 auto;
+}
+ul.list-col{
+	flex-wrap:wrap;
+	}
+.list-col li{
+	width:48%;
+	margin:0 1% 60px;
+	}
+}
+
+
+@media only screen and (max-width: 640px) {
 .sp {
 	display: block;
 }
@@ -23,19 +85,6 @@
 	display: none;
 }
 img {max-width: 100%}
-.section{margin-bottom:30px}
-/*header*/
-#header{
-	height:60px;
-	}
-.inner {
-	width:100%;
-	margin:0 auto;
-}
-.logo{
-	width:240px;
-	padding-left:10px;
-}
 /*Gnavi*/
 #gnavi {
 	display: none;
@@ -184,8 +233,7 @@ img {max-width: 100%}
 	}
 #gnavi ul li.close a:before{
 		border: none;
-	}
-	
+	}	
 #gnavi li:hover .sub:before, #gnavi .sub li a:after, #gnavi .sub li a:hover:after{
 	display:none;
 }
@@ -291,18 +339,7 @@ label {
 	font-size: 27px;
 	margin-bottom: 20px;
 }
-#content{
-	width:100%;
-	padding:0 10px;
-}
-ul.list-col{
-	flex-wrap:wrap;
-	}
-.list-col li{
-	width:48%;
-	margin:0 1% 60px;
-	}
-	#totop {
+#totop {
 	bottom: 60px;
 }
 #totop img {
@@ -315,7 +352,6 @@ ul.list-col{
 }
 
 @media only screen and (max-width: 425px) {
-
 .label_skitter h2, .label_skitter p{
 	padding:15px;
 	width:70%;

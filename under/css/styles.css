@@ -349,7 +349,7 @@ ul.list-col{
 .list-col li:nth-of-type(4){
 	background:url(../images/icon_img04.png) center 30px no-repeat;
 	}
-.list-col li:lastchild{
+.list-col li:last-child{
 	margin-right:0;}
 .box02-btn{
 	position:absolute;
